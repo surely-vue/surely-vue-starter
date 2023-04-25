@@ -10,4 +10,13 @@ module.exports = {
       resolve("./node_modules/vue/dist/vue.esm-bundler.js")
     );
   },
+  css: {
+    loaderOptions: {
+      less: {
+        lessOptions: {
+          javascriptEnabled: true,
+        },
+      },
+    },
+  },
 };
